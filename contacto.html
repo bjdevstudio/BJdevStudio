@@ -1,683 +1,47 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <link rel="canonical" href="" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags Optimizados -->
+    <title>BJDevStudio</title>
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Landwind - Tailwind CSS Landing Page">
     <meta name="description"
-        content="Contáctanos para más información sobre ManguPos. Sistema POS con cumplimiento DGII para República Dominicana. Respuesta en menos de 24 horas. Asesoría sin compromiso.">
-    <meta name="keywords"
-        content="pos dominicana, sistema punto venta, software pos, dgii, ncf, e-cf, facturación electrónica, punto venta dominicana, pos república dominicana, sistema pos rd, cumplimiento dgii, reportes 606 607, software facturación">
-    <meta name="author" content="ManguSoft SRL">
+        content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://mangupos.com/contacto">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mangupos.com/contacto">
-    <meta property="og:title" content="Contáctanos - ManguPos Sistema POS">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Themesberg">
+
+    <!-- Social media share -->
+    <meta property="og:title" content="Landwind - Tailwind CSS Landing Page">
+    <meta property="og:site_name" content="Themesberg">
+    <meta property="og:url" content="https://https://demo.themesberg.com/landwind/">
     <meta property="og:description"
-        content="Contáctanos para más información sobre ManguPos. Sistema POS con cumplimiento DGII para República Dominicana. Respuesta en menos de 24 horas. Asesoría sin compromiso.">
-    <meta property="og:image" content="https://mangupos.com/images/screenshots/dashboard.png">
-    <meta property="og:site_name" content="ManguPos">
-    <meta property="og:locale" content="es_DO">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mangupos.com/contacto">
-    <meta property="twitter:title" content="Contáctanos - ManguPos Sistema POS">
-    <meta property="twitter:description"
-        content="Contáctanos para más información sobre ManguPos. Sistema POS con cumplimiento DGII para República Dominicana. Respuesta en menos de 24 horas. Asesoría sin compromiso.">
-    <meta property="twitter:image" content="https://mangupos.com/images/screenshots/dashboard.png">
-
-    <!-- Geo Tags (Búsquedas Locales) -->
-    <meta name="geo.region" content="DO">
-    <meta name="geo.placename" content="La Vega, República Dominicana">
-    <meta name="geo.position" content="19.224346702670005; -70.53254475189597">
-    <meta name="ICBM" content="19.224346702670005, -70.53254475189597">
-
-    <!-- Favicon y PWA -->
-    <link rel="icon" type="image/x-icon" href="https://mangupos.com/images/favicon.png">
-    <link rel="manifest" href="https://mangupos.com/manifest.json">
-    <meta name="theme-color" content="#2563eb">
-
-    <title>Contacto y Asesoría - ManguPos Sistema POS República Dominicana</title>
+        content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections, pricing cards, and more.">
+    <meta property="og:type" content="">
+    <meta property="og:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@themesberg" />
+    <meta name="twitter:creator" content="@themesberg" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./output.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-
-    <link rel="preload" as="style" href="https://mangupos.com/build/assets/app-BbvdXYTg.css">
-    <link rel="modulepreload" href="https://mangupos.com/build/assets/app-CKl8NZMC.js">
-    <link rel="stylesheet" href="https://mangupos.com/build/assets/app-BbvdXYTg.css" data-navigate-track="reload">
-    <script type="module" src="https://mangupos.com/build/assets/app-CKl8NZMC.js" data-navigate-track="reload"></script>
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://mangupos.com/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- Inter font (auto-hosted, sin dependencia de Google) -->
-    <link rel="stylesheet" href="https://mangupos.com/vendor/fonts/inter.css">
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-
-
-    <!-- Livewire Styles -->
-    <style>
-        [wire\:loading][wire\:loading],
-        [wire\:loading\.delay][wire\:loading\.delay],
-        [wire\:loading\.inline-block][wire\:loading\.inline-block],
-        [wire\:loading\.inline][wire\:loading\.inline],
-        [wire\:loading\.block][wire\:loading\.block],
-        [wire\:loading\.flex][wire\:loading\.flex],
-        [wire\:loading\.table][wire\:loading\.table],
-        [wire\:loading\.grid][wire\:loading\.grid],
-        [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {
-            display: none;
-        }
-
-        [wire\:loading\.delay\.none][wire\:loading\.delay\.none],
-        [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest],
-        [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter],
-        [wire\:loading\.delay\.short][wire\:loading\.delay\.short],
-        [wire\:loading\.delay\.default][wire\:loading\.delay\.default],
-        [wire\:loading\.delay\.long][wire\:loading\.delay\.long],
-        [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer],
-        [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {
-            display: none;
-        }
-
-        [wire\:offline][wire\:offline] {
-            display: none;
-        }
-
-        [wire\:dirty]:not(textarea):not(input):not(select) {
-            display: none;
-        }
-
-        :root {
-            --livewire-progress-bar-color: #2299dd;
-        }
-
-        [x-cloak] {
-            display: none !important;
-        }
-
-        [wire\:cloak] {
-            display: none !important;
-        }
-
-        dialog#livewire-error::backdrop {
-            background-color: rgba(0, 0, 0, .6);
-        }
-    </style>
-
-
-
-    <!-- Google Analytics 4 -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DSF7R8D6M3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-
-        gtag('consent', 'default', { 'analytics_storage': 'denied' });
-        gtag('js', new Date());
-        gtag('config', 'G-DSF7R8D6M3', {
-            'anonymize_ip': true,
-            'cookie_flags': 'SameSite=None;Secure'
-        });
-
-        // Restaurar consentimiento previo si el usuario ya eligió
-        if (localStorage.getItem('cookies_consent') === 'accepted') {
-            gtag('consent', 'update', { 'analytics_storage': 'granted' });
-        }
-    </script>
-    <style type="text/css" id="operaUserStyle"></style>
-
-
-    <style>
-        /* Make clicks pass-through */
-
-        #nprogress {
-            pointer-events: none;
-        }
-
-        #nprogress .bar {
-            background: var(--livewire-progress-bar-color, #29d);
-
-            position: fixed;
-            z-index: 1031;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 2px;
-        }
-
-        /* Fancy blur effect */
-        #nprogress .peg {
-            display: block;
-            position: absolute;
-            right: 0px;
-            width: 100px;
-            height: 100%;
-            box-shadow: 0 0 10px var(--livewire-progress-bar-color, #29d), 0 0 5px var(--livewire-progress-bar-color, #29d);
-            opacity: 1.0;
-
-            -webkit-transform: rotate(3deg) translate(0px, -4px);
-            -ms-transform: rotate(3deg) translate(0px, -4px);
-            transform: rotate(3deg) translate(0px, -4px);
-        }
-
-        /* Remove these to get rid of the spinner */
-        #nprogress .spinner {
-            display: block;
-            position: fixed;
-            z-index: 1031;
-            top: 15px;
-            right: 15px;
-        }
-
-        #nprogress .spinner-icon {
-            width: 18px;
-            height: 18px;
-            box-sizing: border-box;
-
-            border: solid 2px transparent;
-            border-top-color: var(--livewire-progress-bar-color, #29d);
-            border-left-color: var(--livewire-progress-bar-color, #29d);
-            border-radius: 50%;
-
-            -webkit-animation: nprogress-spinner 400ms linear infinite;
-            animation: nprogress-spinner 400ms linear infinite;
-        }
-
-        .nprogress-custom-parent {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .nprogress-custom-parent #nprogress .spinner,
-        .nprogress-custom-parent #nprogress .bar {
-            position: absolute;
-        }
-
-        @-webkit-keyframes nprogress-spinner {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
-        }
-
-        @keyframes nprogress-spinner {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-    <style type="text/css">
-        :root img[width="728"][height="90"],
-        :root [href="https://adstub.net/cina777/"],
-        :root [href="https://adstub.net/arab777/"],
-        :root [href="https://adstub.net/ratu89/"],
-        :root [href="https://adstub.net/judi89/"],
-        :root [href^="//mage98rquewz.com/"],
-        :root [href^="//x4pollyxxpush.com/"],
-        :root span[id^="ezoic-pub-ad-placeholder-"],
-        :root ins.adsbygoogle[data-ad-slot],
-        :root ins.adsbygoogle[data-ad-client],
-        :root img[src^="https://s-img.adskeeper.com/"],
-        :root guj-ad,
-        :root gpt-ad,
-        :root div[ow-ad-unit-wrapper],
-        :root div[id^="zergnet-widget"],
-        :root div[id^="vuukle-ad-"],
-        :root div[id^="taboola-stream-"],
-        :root div[id^="sticky_ad_"],
-        :root div[id^="st"][style^="z-index: 999999999;"],
-        :root div[id^="rc-widget-"],
-        :root div[id^="mrec-leaderboard-"],
-        :root div[id^="gpt_ad_"],
-        :root div[id^="ezoic-pub-ad-"],
-        :root div[id^="dfp-ad-"],
-        :root div[id^="crt-"][style],
-        :root div[id^="apn_native_ad_slot_"],
-        :root div[id^="adspot-"],
-        :root div[id^="adrotate_widgets-"],
-        :root ps-connatix-module,
-        :root div[id^="ad_position_"],
-        :root div[id^="ad-div-"],
-        :root div[id*="ScriptRoot"],
-        :root div[id*="MarketGid"],
-        :root [href="https://adstub.net/rusia777/"],
-        :root div[data-id-advertdfpconf],
-        :root div[data-dfp-id],
-        :root hl-adsense,
-        :root div[data-contentexchange-widget],
-        :root div[data-alias="300x250 Ad 2"],
-        :root div[data-adunit-path],
-        :root div[data-adname],
-        :root div[data-ad-placeholder],
-        :root a[href^="https://osfultrbriolenai.info/"],
-        :root div[class^="Adstyled__AdWrapper-"],
-        :root a[href^="https://go.xlviiirdr.com"],
-        :root div[class$="-adlabel"],
-        :root display-ads,
-        :root a[href^="https://go.grinsbest.com/"],
-        :root citrus-ad-wrapper,
-        :root a[href^="https://s.zlinkd.com/"],
-        :root bottomadblock,
-        :root amp-fx-flying-carpet,
-        :root amp-embed[type="taboola"],
-        :root amp-connatix-player,
-        :root div[id^="google_dfp_"],
-        :root ad-slot,
-        :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"],
-        :root a[href^="https://www.privateinternetaccess.com/"]>img,
-        :root a[href^="https://www.onlineusershielder.com/"],
-        :root a[href^="https://financeads.net/tc.php?"],
-        :root a[href^="https://www.mrskin.com/tour"],
-        :root a[href^="https://www.infowarsstore.com/"]>img,
-        :root a[href^="https://ak.psaltauw.net/"],
-        :root broadstreet-zone-container,
-        :root a[href^="https://www.highperformancecpmgate.com/"],
-        :root amp-ad,
-        :root a[href^="https://www.highcpmrevenuenetwork.com/"],
-        :root a[href^="https://www.get-express-vpn.com/offer/"],
-        :root a[href^="https://lnkxt.bannerator.com/"],
-        :root a[href^="https://www.geekbuying.com/dynamic-ads/"],
-        :root [href^="https://groorsoa.net/"],
-        :root a[href^="https://www.financeads.net/tc.php?"],
-        :root a[href^="https://www.effectiveratecpm.com/"],
-        :root [href^="https://www.herbanomic.com/"]>img,
-        :root a[href^="https://www.dql2clk.com/"],
-        :root a[href^="https://www.nutaku.net/signup/landing/"],
-        :root a[href^="https://www.dating-finder.com/signup/?ai_d="],
-        :root a[href^="https://explore-site.com/"],
-        :root a[href^="https://www.brazzersnetwork.com/landing/"],
-        :root [data-template-type="nativead"],
-        :root a[href^="https://www.adultempire.com/"][href*="?partner_id="],
-        :root a[href^="https://voluum.prom-xcams.com/"],
-        :root a[href^="https://twinrdsyte.com/"],
-        :root a[href^="https://twinrdsrv.com/"],
-        :root a[href^="https://syndicate.contentsserved.com/"],
-        :root div[data-alias="300x250 Ad 1"],
-        :root a[href^="https://trk.nfl-online-streams.club/"],
-        :root a[href^="https://tracking.avapartner.com/"],
-        :root a[href^="https://track.wg-aff.com"],
-        :root a[href^="https://track.ultravpn.com/"],
-        :root a[href^="https://track.afcpatrk.com/"],
-        :root a[href^="https://track.adform.net/"],
-        :root a[href^="https://torguard.net/aff.php"]>img,
-        :root [data-identity="adhesive-ad"],
-        :root a[href^="https://tc.tradetracker.net/"]>img,
-        :root a[href^="https://tatrck.com/"],
-        :root [href^="https://zstacklife.com/"] img,
-        :root a[href^="https://click.candyoffers.com/"],
-        :root a[href^="https://t.aslnk.link/"],
-        :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"],
-        :root a[href^="https://t.ajump1.com/"],
-        :root a[href^="https://t.adating.link/"],
-        :root a[href^="https://go.trackitalltheway.com/"],
-        :root [href^="https://track.fiverr.com/visit/"]>img,
-        :root a[href^="https://syndication.exoclick.com/"],
-        :root a[href^="https://syndication.dynsrvtbg.com/"],
-        :root .gnt_em_vp_c[data-g-s="vp_dk"],
-        :root div[data-ad-wrapper],
-        :root a[href^="https://svb-analytics.trackerrr.com/"],
-        :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"]+.ob_source,
-        :root a[href^="http://www.iyalc.com/"],
-        :root a[href^="https://claring-loccelkin.com/"],
-        :root a[href^="https://stardomcoit.com/"],
-        :root a[href^="https://track.aftrk5.com/"],
-        :root a[href^="https://slkmis.com/"],
-        :root a[href^="https://myclick-2.com/"],
-        :root a[href^="https://sexynearme.com/"],
-        :root [data-ad-manager-id],
-        :root a[href^="https://s.zlinkr.com/"],
-        :root [href="https://adstub.net/gaza88/"],
-        :root a[href^="https://ad.doubleclick.net/"],
-        :root a[href^="https://static.fleshlight.com/images/banners/"],
-        :root a[href^="https://s.zlink7.com/"],
-        :root a[href^="https://s.ma3ion.com/"],
-        :root a[href^="https://s.eunow4u.com/"],
-        :root a[href^="https://random-affiliate.atimaze.com/"],
-        :root #kt_player>div[style$="display: block;"][style*="inset: 0px;"],
-        :root [href$="/sexdating.php"],
-        :root a[href^="https://quotationfirearmrevision.com/"],
-        :root a[href^="https://pubads.g.doubleclick.net/"],
-        :root a[href^="https://prf.hn/click/"][href*="/camref:"]>img,
-        :root a[href^="https://serve.awmdelivery.com/"],
-        :root a[href^="https://www.dating-finder.com/?ai_d="],
-        :root a[href^="https://prf.hn/click/"][href*="/adref:"]>img,
-        :root [href^="https://ap.octopuspop.com/click/"]>img,
-        :root app-ad,
-        :root a[href^="https://postback1win.com/"],
-        :root a[href^="https://a.adtng.com/"],
-        :root a[href^="https://playnano.online/offerwalls/?ref="],
-        :root a[href^="https://mmwebhandler.aff-online.com/"],
-        :root a[href^="https://www.bet365.com/"][href*="affiliate="],
-        :root a[href^="https://pb-track.com/"],
-        :root a[href^="https://pb-front.com/"],
-        :root a[href^="https://paid.outbrain.com/network/redir?"],
-        :root a[href^="https://streamate.com/landing/click/"],
-        :root a[href^="https://upsups.click/"],
-        :root a[href^="https://ndt5.net/"],
-        :root a[href^="https://natour.naughtyamerica.com/track/"],
-        :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"],
-        :root [data-ad-name],
-        :root a[href^="https://loboclick.com/"],
-        :root a[href^="https://lead1.pl/"],
-        :root a[href^="https://landing.brazzersnetwork.com/"],
-        :root a[href^="https://juicyads.in/"],
-        :root a[href^="https://snowdayonline.xyz/"],
-        :root a[href^="https://join.dreamsexworld.com/"],
-        :root a[href^="https://join.bannedsextapes.com/track/"],
-        :root a[href^="https://jaxofuna.com/"],
-        :root a[href^="https://italarizege.xyz/"],
-        :root a[href^="https://identicaldrench.com/"],
-        :root ad-shield-ads,
-        :root a[href^="https://hot-growngames.life/"],
-        :root a[href^="https://helmethomicidal.com/"],
-        :root display-ad-component,
-        :root a[href^="https://golinks.work/"],
-        :root a[href^="https://s.zlinkn.com/"],
-        :root a[href^="https://go.xxxvjmp.com/"],
-        :root a[href^="https://go.xxxjmp.com"],
-        :root a[href^="https://zirdough.net/"],
-        :root [class^="tile-picker__CitrusBannerContainer-sc-"],
-        :root a[href^="https://go.xxxiijmp.com"],
-        :root a[href^="https://go.xtbaffiliates.com/"],
-        :root [data-role="tile-ads-module"],
-        :root a[href^="https://go.xlviirdr.com"],
-        :root a[href^="https://go.xlivrdr.com"],
-        :root a[href^="https://ismlks.com/"],
-        :root [href^="https://www.mypillow.com/"]>img,
-        :root a[href^="https://go.xlirdr.com"],
-        :root [data-css-class="dfp-inarticle"],
-        :root a[href^="https://go.tmrjmp.com"],
-        :root a[href^="https://go.markets.com/visit/?bta="],
-        :root a[href^="https://billing.purevpn.com/aff.php"]>img,
-        :root a[href^="https://go.hpyrdr.com/"],
-        :root a[href^="https://lijavaxa.com/"],
-        :root a[href^="https://go.goaserv.com/"],
-        :root app-large-ad,
-        :root [href^="https://turtlebids.irauctions.com/"] img,
-        :root div[data-adunit],
-        :root a[href^="https://go.etoro.com/"]>img,
-        :root a[href^="https://go.dmzjmp.com"],
-        :root a[href^="https://www.bang.com/?aff="],
-        :root #mgb-container>#mgb,
-        :root a[href^="https://go.admjmp.com"],
-        :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="]>img,
-        :root a[href^="https://datewhisper.life/"],
-        :root a[href^="https://click.linksynergy.com/fs-bin/"]>img,
-        :root a[href^="https://get-link.xyz/"],
-        :root a[href^="https://www.mrskin.com/account/"],
-        :root a[href^="https://www.adskeeper.com"],
-        :root a[data-redirect^="https://paid.outbrain.com/network/redir?"],
-        :root [href^="https://clicks.affstrack.com/"]>img,
-        :root a[href^="https://engine.phn.doublepimp.com/"],
-        :root a[href^="https://dl-protect.net/"],
-        :root a[href*=".foxqck.com/"],
-        :root a[href^="https://ctosrd.com/"],
-        :root a[href^="https://go.bushheel.com/"],
-        :root a[href^="https://ctjdwm.com/"],
-        :root [href="//sexcams.plus/"],
-        :root a[href^="https://camfapr.com/landing/click/"],
-        :root a[href^="https://prf.hn/click/"][href*="/creativeref:"]>img,
-        :root a[href*="&maxads="],
-        :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="],
-        :root a[href^="https://1betandgonow.com/"],
-        :root a[href^="https://chaturbate.com/in/?"],
-        :root a[href^="https://t.ajrkm1.com/"],
-        :root a[href^="https://bongacams10.com/track?"],
-        :root a[href*=".g2afse.com/"],
-        :root a[href^="https://bodelen.com/"],
-        :root a[href^="//hoodingluster.com/"],
-        :root a[href^="https://black77854.com/"],
-        :root a[href^="https://getmatchedlocally.com/"],
-        :root app-advertisement,
-        :root a[href^="https://rixofa.com/"],
-        :root a[href^="https://best-experience-cool.com/"],
-        :root [data-taboola-options],
-        :root a[href^="https://believessway.com/"],
-        :root a[href^="https://Click.ggpickaff.com/"],
-        :root a[href^="https://banners.livepartners.com/"],
-        :root a[href^="http://revolvemockerycopper.com/"],
-        :root a[href^="https://awptjmp.com/"],
-        :root a[href^="https://join.sexworld3d.com/track/"],
-        :root a[href^="https://aweptjmp.com/"],
-        :root a[href^="https://ausoafab.net/"],
-        :root a[href^="https://clicks.pipaffiliates.com/"],
-        :root a[href^="https://aj1070.online/"],
-        :root a[href^="https://a.bestcontentoperation.top/"],
-        :root a[href^="https://adultfriendfinder.com/go/"],
-        :root a[href^="https://ads.planetwin365affiliate.com/"],
-        :root a[href^="https://ads.leovegas.com/"],
-        :root a[href^="https://go.xlvirdr.com"],
-        :root img[src^="https://images.purevpnaffiliates.com"],
-        :root a[href^="https://porntubemate.com/"],
-        :root a[href^="https://click.dtiserv2.com/"],
-        :root a[href^="https://clickadilla.com/"],
-        :root a[href^="https://a.medfoodhome.com/"],
-        :root a[href^="https://cam4com.go2cloud.org/"],
-        :root .nya-slot[style],
-        :root a[href^="https://a.bestcontentweb.top/"],
-        :root atf-ad-slot,
-        :root a[href^="https://a2.adform.net/"],
-        :root a[href^="https://a.candyai.love/"],
-        :root .banner-img>.pbl,
-        :root [data-m-ad-id],
-        :root a[href^="https://a-ads.com/"],
-        :root a[href^="https://1winpb.com/"],
-        :root div[id^="optidigital-adslot"],
-        :root [href^="https://wsup.ai/"],
-        :root a[href^="https://123-stream.org/"],
-        :root a[href^="https://in.rabbtrk.com/"],
-        :root a[href^="http://www.h4trck.com/"],
-        :root [href^="https://a.acebet.com/api/click?"],
-        :root a[href^="http://www.friendlyduck.com/AF_"],
-        :root a[href^="http://partners.etoro.com/"],
-        :root [href="https://chaturbate.jjgirls.com/"]>img,
-        :root a[href^="http://cam4com.go2cloud.org/aff_c?"],
-        :root a[href^="https://ads.betfair.com/redirect.aspx?"],
-        :root amp-ad-custom,
-        :root a[href^="http://trk.globwo.online/"],
-        :root a[onclick^="window.location.replace('https://random-affiliate.atimaze.com/"],
-        :root a[href^="https://bongacams2.com/track?"],
-        :root a-ad,
-        :root a[href^="https://offhandpump.com/"],
-        :root a[href^="http://stickingrepute.com/"],
-        :root #slashboxes>.deals-rail,
-        :root div[aria-label="Ads"],
-        :root [href^="http://mypillow.com/"]>img,
-        :root a[href^="http://bongacams.com/track?"],
-        :root a[href^="//startgaming.net/tienda/" i],
-        :root a[href^="https://a.medfoodsafety.com/"],
-        :root a[href^="//go.eabids.com/"],
-        :root a[href^=" https://www.friendlyduck.com/AF_"],
-        :root [data-cl-spot-id],
-        :root a[href*="/jump/next.php?r="],
-        :root a[href^="https://go.nordvpn.net/aff"]>img,
-        :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\],
-        :root [href^="http://clicks.totemcash.com/"],
-        :root a[href^="https://ad.zanox.com/ppc/"]>img,
-        :root [data-d-ad-id],
-        :root a[href*=".engine.adglare.net/"],
-        :root div[id^="lazyad-"],
-        :root a[href^="http://com-1.pro/"],
-        :root [href^="https://www.profitablegatecpm.com/"],
-        :root a[href*=".cfm?domain="][href*="&fp="],
-        :root a[href^="https://ab.advertiserurl.com/aff/"],
-        :root a[data-oburl^="https://paid.outbrain.com/network/redir?"],
-        :root [id^="section-ad-banner"],
-        :root [id^="ad_slider"],
-        :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="],
-        :root a[href^="https://wmctjd.com/"],
-        :root a[href*="//jjgirls.com/sex/Chaturbate"],
-        :root [id^="ad-wrap-"],
-        :root [href^="https://zone.gotrackier.com/"],
-        :root a[href^="http://sarcasmadvisor.com/"],
-        :root [href^="https://www.restoro.com/"],
-        :root a[href^="https://track.totalav.com/"],
-        :root a[href^="https://ctrdwm.com/"],
-        :root [href^="https://www.targetingpartner.com/"],
-        :root a[href^="https://join.virtuallust3d.com/"],
-        :root .section-subheader>.section-hotel-prices-header,
-        :root [href^="https://www.hostg.xyz/"]>img,
-        :root a[href^="https://bngpt.com/"],
-        :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="],
-        :root a[href^="http://adultfriendfinder.com/go/"],
-        :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="],
-        :root a[href^="https://tour.mrskin.com/"],
-        :root div[id^="ad-position-"],
-        :root a[href^="https://www.toprevenuegate.com/"],
-        :root a[href^="https://bc.game/"],
-        :root a[href^="http://join.brokestraightboys.com/track/"],
-        :root div[id^="div-ads-"],
-        :root [href^="https://rapidgator.net/article/premium/ref/"],
-        :root [href^="https://join.girlsoutwest.com/"],
-        :root a[href^="https://activate-game.com/"],
-        :root .scroll-fixable.rail-right>.deals-rail,
-        :root [data-wpas-zoneid],
-        :root a[href^="https://track.aftrk3.com/"],
-        :root [href^="https://join3.bannedsextapes.com"],
-        :root div[data-adzone],
-        :root div[id^="adngin-"],
-        :root [data-rc-widget],
-        :root span[data-ez-ph-id],
-        :root [href^="https://track.aftrk1.com/"],
-        :root [href^="https://join.playboyplus.com/track/"],
-        :root a[href^="https://go.xxxijmp.com"],
-        :root [href^="https://istlnkcl.com/"],
-        :root a[href^="https://trk.softonixs.xyz/"],
-        :root a[href^="https://iqbroker.com/"][href*="?aff="],
-        :root [href^="https://rpwmct.com/"],
-        :root [href^="https://wct.link/click?"],
-        :root a[href^="https://t.acam.link/"],
-        :root a[href^="https://go.strpjmp.com/"],
-        :root [href^="https://url.totaladblock.com/"],
-        :root a[href^="https://go.rmishe.com/"],
-        :root [href^="https://ilovemyfreedoms.com/landing-"],
-        :root [href="https://adstub.net/indo666/"],
-        :root [href^="https://glersakr.com/"],
-        :root a[href^="https://tm-offers.gamingadult.com/"],
-        :root [href^="https://charmingdatings.life/"],
-        :root [data-id^="div-gpt-ad"],
-        :root a[href^="https://tracker.loropartners.com/"],
-        :root [href^="https://awbbjmp.com/"],
-        :root a[href^="https://www.friendlyduck.com/AF_"],
-        :root [href^="https://ad1.adfarm1.adition.com/"],
-        :root a[href^="https://t.ajrkm3.com/"],
-        :root [href^="https://aads.com/campaigns/"],
-        :root a[href^="https://fc.lc/ref/"],
-        :root a[href^="https://go.bbrdbr.com"],
-        :root a[href^="http://tc.tradetracker.net/"]>img,
-        :root a[href^="https://s.zlink3.com/"],
-        :root a[href^="http://sneakyadministration.com/"],
-        :root [href^="https://www.brighteonstore.com/products/"] img,
-        :root a[href^="https://bngprm.com/"],
-        :root [href^="https://shiftnetwork.infusionsoft.com/go/"]>img,
-        :root [href^="http://www.mypillow.com/"]>img,
-        :root .ob_container .item-container-obpd,
-        :root [id^="div-gpt-ad"],
-        :root [href="https://jdrucker.com/gold"]>img,
-        :root a[href^="https://join.virtualtaboo.com/track/"],
-        :root [id^="ad_sky"],
-        :root [name^="google_ads_iframe"],
-        :root aside[id^="adrotate_widgets-"],
-        :root a[href^="https://www.liquidfire.mobi/"],
-        :root DFP-AD,
-        :root .grid>.container>#aside-promotion,
-        :root [data-type="ad-vertical"],
-        :root [href^="https://go.xlrdr.com"],
-        :root a[href^="https://s.cant3am.com/"],
-        :root [data-testid^="taboola-"],
-        :root [data-testid^="section-AdRowBillboard"],
-        :root a[href^="https://track.1234sd123.com/"],
-        :root zeus-ad,
-        :root [data-testid="prism-ad-wrapper"],
-        :root [href^="https://ad.admitad.com/"],
-        :root [href^="https://mypillow.com/"]>img,
-        :root [data-testid="ad_testID"],
-        :root [data-mobile-ad-id],
-        :root [data-dynamic-ads],
-        :root a[href^="https://gamingadlt.com/?offer="],
-        :root [data-desktop-ad-id],
-        :root a[href^="https://go.rmhfrtnd.com"],
-        :root a[href^="https://pb-imc.com/"],
-        :root a[href^="https://www8.smartadserver.com/"],
-        :root topadblock,
-        :root a[href^="//s.zlinkd.com/"],
-        :root [href^="https://mypatriotsupply.com/"]>img,
-        :root [data-testid="adBanner-wrapper"],
-        :root [href^="https://mylead.global/stl/"]>img,
-        :root a[href*=".adsrv.eacdn.com/"],
-        :root [href^="https://antiagingbed.com/discount/"]>img,
-        :root #teaser1[style^="width:autopx;"],
-        :root [href^="https://www.cloudways.com/en/?id"],
-        :root [data-asg-ins],
-        :root [data-block-type="ad"],
-        :root [data-ad-width],
-        :root a[href^="https://clickins.slixa.com/"],
-        :root [onclick*="content.ad/"],
-        :root a[href^="https://go.cmtaffiliates.com/"],
-        :root [href^="https://optimizedelite.com/"]>img,
-        :root div[data-ad-region],
-        :root AMP-AD,
-        :root [data-ad-cls],
-        :root a[href^="https://www.adxsrve.com/"],
-        :root a[href^="https://click.Ggpickaff.com/"],
-        :root [data-ez-name],
-        :root a[href^="https://go.mnaspm.com/"],
-        :root a[href^="https://service.bv-aff-trx.com/"],
-        :root a[href^="https://6-partner.com/"],
-        :root [class^="s2nPlayer"],
-        :root [href^="https://affiliate.fastcomet.com/"]>img,
-        :root [class^="adDisplay-module"],
-        :root a[href^="https://adclick.g.doubleclick.net/"],
-        :root [data-freestar-ad][id],
-        :root AD-SLOT,
-        :root a[href^="https://combodef.com/"],
-        :root a[href^="https://click.hoolig.app/"],
-        :root a[href^="https://www.googleadservices.com/pagead/aclk?"]>img,
-        :root [data-ad-module],
-        :root a[href^="https://a.bestcontentfood.top/"],
-        :root #kt_player>a[target="_blank"],
-        :root a[href^="https://go.skinstrip.net"][href*="?campaignId="],
-        :root #teaser2[style^="width:autopx;"],
-        :root [data-revive-zoneid],
-        :root a[href^="https://losingoldfry.com/"],
-        :root div[id^="div-gpt-"],
-        :root a[href^="https://gml-grp.com/"],
-        :root .ob_dual_right>.ob_ads_header~.odb_div,
-        :root div[data-ad-targeting],
-        :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"],
-        :root [href^="https://www.avantlink.com/click.php"] img,
-        :root [data-testid="commercial-label-taboola"],
-        :root [class^="div-gpt-ad"],
-        :root a[href^="https://traffdaq.com/"],
-        :root #teaser3[style^="width:autopx;"],
-        :root a[href^="https://go.hpyjmp.com"],
-        :root iframe[scrolling="no"][sandbox*="allow-popups allow-modals"][style^="width: 100%; height: 100%; border: none;"],
-        :root [href^="https://mystore.com/"]>img,
-        :root [class^="amp-ad-"],
-        :root a[href^="https://clixtrac.com/"],
-        :root a[href^="https://wittered-mainging.com/"],
-        :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"] {
-            display: none !important;
-        }
-    </style>
 </head>
 
-<body class="antialiased bg-white text-gray-900" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
-
+<body>
     <header class="fixed w-full">
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -739,142 +103,173 @@
         </nav>
     </header>
 
+    <!-- Start block -->
+    <section class="bg-white dark:bg-gray-900">
+        <main class="pt-20">
+            <!-- Toast Notification Container -->
+            <div id="toast-container" class="fixed top-24 right-4 z-50"></div>
 
-    <!-- Main Content -->
-    <main class="pt-16">
-
-        <section class="bg-white dark:bg-gray-900">
-            <div class="max-w-screen-xl px-4 py-16 mx-auto lg:px-6">
-                <div class="max-w-screen-md mx-auto text-center mb-12">
-                    <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                        Contáctanos
-                    </h2>
-                    <p class="text-lg text-gray-500 dark:text-gray-400">
-                        ¿Tienes una idea, proyecto o necesitas una solución personalizada?
-                        Escríbenos y te ayudaremos a convertirla en software real.
-                    </p>
-                </div>
-
-                <div class="grid gap-8 lg:grid-cols-2">
-
-
-                    <!-- Formulario -->
-                    <div class="p-8 bg-gray-50 rounded-2xl dark:bg-gray-800 shadow-sm">
-                        <form class="space-y-6">
-                            <div>
-                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    Nombre
-                                </label>
-                                <input type="text" id="name"
-                                    class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    placeholder="Tu nombre" required>
-                            </div>
-
-                            <div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    Correo
-                                </label>
-                                <input type="email" id="email"
-                                    class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    placeholder="correo@ejemplo.com" required>
-                            </div>
-
-                            <div>
-                                <label for="message"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                    Mensaje
-                                </label>
-                                <textarea id="message" rows="6"
-                                    class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                                    placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
-                            </div>
-
-                            <button type="submit"
-                                class="w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">
-                                Enviar mensaje
-                            </button>
-                        </form>
+            <section class="bg-white">
+                <div class="max-w-screen-xl px-4 py-16 mx-auto lg:px-6">
+                    <div class="max-w-screen-md mx-auto text-center mb-12">
+                        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">
+                            Contáctanos
+                        </h1>
+                        <p class="text-lg text-gray-500">
+                            ¿Tienes una idea, proyecto o necesitas una solución personalizada?
+                            Escríbenos y te ayudaremos a convertirla en software real.
+                        </p>
                     </div>
-                    <!-- Información -->
-                    <div class="space-y-8">
-                        <div class="p-6 bg-gray-50 rounded-2xl dark:bg-gray-800 shadow-sm">
-                            <div class="flex items-start space-x-4">
-                                <div class="p-3 bg-purple-100 rounded-xl dark:bg-purple-900/30">
-                                    <i data-lucide="mail" class="w-6 h-6 text-purple-600 dark:text-purple-400"></i>
-                                </div>
+
+                    <div class="grid gap-8 lg:grid-cols-2">
+                        <!-- Formulario funcional -->
+                        <div class="p-8 bg-gray-50 rounded-2xl shadow-sm">
+                            <form id="contactForm" class="space-y-6">
                                 <div>
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Correo electrónico</h3>
-                                    <p class="mt-2 text-gray-500 dark:text-gray-400">
-                                        Puedes escribirnos para cotizaciones, soporte o cualquier consulta.
-                                    </p>
-                                    <a href="mailto:contacto@bjdevstudio.com"
-                                        class="inline-block mt-3 text-purple-600 font-medium hover:underline dark:text-purple-400">
-                                        contacto@bjdevstudio.com
-                                    </a>
+                                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900">
+                                        Nombre completo *
+                                    </label>
+                                    <input type="text" id="name" name="name"
+                                        class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3"
+                                        placeholder="Tu nombre" required>
                                 </div>
-                            </div>
+
+                                <div>
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">
+                                        Correo electrónico *
+                                    </label>
+                                    <input type="email" id="email" name="email"
+                                        class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3"
+                                        placeholder="correo@ejemplo.com" required>
+                                </div>
+
+                                <div>
+                                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">
+                                        Teléfono (opcional)
+                                    </label>
+                                    <input type="tel" id="phone" name="phone"
+                                        class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3"
+                                        placeholder="809-000-0000">
+                                </div>
+
+                                <div>
+                                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">
+                                        Asunto *
+                                    </label>
+                                    <select id="subject" name="subject" required
+                                        class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3">
+                                        <option value="">Selecciona un asunto</option>
+                                        <option value="cotizacion">Cotización de proyecto</option>
+                                        <option value="soporte">Soporte técnico</option>
+                                        <option value="consulta">Consulta general</option>
+                                        <option value="colaboracion">Colaboración</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">
+                                        Mensaje *
+                                    </label>
+                                    <textarea id="message" name="message" rows="6"
+                                        class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-3"
+                                        placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-3 transition-colors">
+                                    Enviar mensaje
+                                </button>
+                            </form>
                         </div>
 
-                        <div class="p-6 bg-gray-50 rounded-2xl dark:bg-gray-800 shadow-sm">
-                            <div class="flex items-start space-x-4">
-                                <div class="p-3 bg-green-100 rounded-xl dark:bg-green-900/30">
-                                    <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path fill="#25D366"
-                                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.5-16.4-14.7-27.5-32.8-30.7-38.4-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.5-9.2 1.9-3.7 1-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.6 9.2 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">WhatsApp</h3>
-                                    <p class="mt-2 text-gray-500 dark:text-gray-400">
-                                        Habla con nosotros de forma rápida y directa.
-                                    </p>
-                                    <a href="https://wa.me/18090000000"
-                                        class="inline-block mt-3 text-green-600 font-medium hover:underline dark:text-green-400">
-                                        +1 (809) 000-0000
-                                    </a>
+                        <!-- Información de contacto -->
+                        <div class="space-y-8">
+                            <!-- Email -->
+                            <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-purple-100 rounded-xl">
+                                        <i data-lucide="mail" class="w-6 h-6 text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900">Correo electrónico</h3>
+                                        <p class="mt-2 text-gray-500">
+                                            Escríbenos para cotizaciones, soporte o cualquier consulta.
+                                        </p>
+                                        <a href="mailto:contacto@bjdevstudio.com"
+                                            class="inline-block mt-3 text-purple-600 font-medium hover:underline">
+                                            contacto@bjdevstudio.com
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="p-6 bg-gray-50 rounded-2xl dark:bg-gray-800 shadow-sm">
-                            <div class="flex items-start space-x-4">
-                                <div class="p-3 bg-pink-100 rounded-xl dark:bg-pink-900/30">
-                                    <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <defs>
-                                            <linearGradient id="instagram-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-                                                <stop offset="0%" style="stop-color:#FFD600" />
-                                                <stop offset="5%" style="stop-color:#FF7A00" />
-                                                <stop offset="10%" style="stop-color:#FF0169" />
-                                                <stop offset="30%" style="stop-color:#D300C5" />
-                                                <stop offset="60%" style="stop-color:#7638FA" />
-                                            </linearGradient>
-                                        </defs>
-                                        <path fill="url(#instagram-gradient)"
-                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                                    </svg>
+                            <!-- WhatsApp -->
+                            <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-green-100 rounded-xl">
+                                        <svg class="w-6 h-6" viewBox="0 0 448 512" fill="currentColor" color="#25D366">
+                                            <path fill="#25D366"
+                                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.1 0-65.6-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.4-8.6-44.6-27.5-16.4-14.7-27.5-32.8-30.7-38.4-3.2-5.6-.3-8.6 2.5-11.4 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.2 3.7-5.5 5.5-9.2 1.9-3.7 1-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.3 5.7 23.6 9.2 31.7 11.7 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900">WhatsApp</h3>
+                                        <p class="mt-2 text-gray-500">
+                                            Respuesta rápida y directa.
+                                        </p>
+                                        <a href="https://wa.me/18295551234" target="_blank"
+                                            class="inline-block mt-3 text-green-600 font-medium hover:underline">
+                                            +1 (829) 555-1234
+                                        </a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Instagram</h3>
-                                    <p class="mt-2 text-gray-500 dark:text-gray-400">
-                                        Conoce nuestros proyectos y novedades.
-                                    </p>
-                                    <a href="https://www.instagram.com/bj_devstudio/"
-                                        class="inline-block mt-3 text-pink-600 font-medium hover:underline dark:text-pink-400">
-                                        @bj_devstudio
-                                    </a>
+                            </div>
+
+                            <!-- Instagram -->
+                            <div class="p-6 bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <div class="flex items-start space-x-4">
+                                    <div class="p-3 bg-pink-100 rounded-xl">
+                                        <a href="https://www.instagram.com/bj_devstudio/"
+                                            class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <defs>
+                                                    <linearGradient id="instagram-gradient" x1="100%" y1="100%" x2="0%"
+                                                        y2="0%">
+                                                        <stop offset="0%" style="stop-color:#FFD600" />
+                                                        <stop offset="5%" style="stop-color:#FF7A00" />
+                                                        <stop offset="10%" style="stop-color:#FF0169" />
+                                                        <stop offset="30%" style="stop-color:#D300C5" />
+                                                        <stop offset="60%" style="stop-color:#7638FA" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <path fill="url(#instagram-gradient)"
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                            </svg> Instagram
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-900">Instagram</h3>
+                                        <p class="mt-2 text-gray-500">
+                                            Conoce nuestros proyectos y novedades.
+                                        </p>
+                                        <a href="https://www.instagram.com/bj_devstudio" target="_blank"
+                                            class="inline-block mt-3 text-pink-600 font-medium hover:underline">
+                                            @bj_devstudio
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
+    </section>
+    <!-- End block -->
+    <!-- Start block -->
 
-
-
-    </main>
-
-    <!-- Footer -->
+    <!-- End block -->
     <footer class="bg-white dark:bg-gray-800">
         <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
 
@@ -967,72 +362,11 @@
             </div>
         </div>
     </footer>
-
-    <div x-data="{
-    show: false,
-    init() {
-      const consent = localStorage.getItem('cookies_consent');
-      if (!consent) {
-        this.show = true;
-      } else if (consent === 'accepted') {
-        this.grantConsent();
-      }
-    },
-    accept() {
-      localStorage.setItem('cookies_consent', 'accepted');
-      this.grantConsent();
-      this.show = false;
-    },
-    reject() {
-      localStorage.setItem('cookies_consent', 'rejected');
-      this.show = false;
-    },
-    grantConsent() {
-      if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', { 'analytics_storage': 'granted' });
-      }
-    }
-  }" x-show="show" x-transition:enter="transition ease-out duration-300"
-        x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
-        x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
-        x-transition:leave-end="opacity-0 translate-y-4" class="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6">
-        <div
-            class="max-w-4xl mx-auto bg-gray-900 text-white rounded-xl shadow-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <div class="flex-1 text-sm text-gray-300">
-                <span class="font-semibold text-white">🍪 Cookies</span> —
-                Usamos cookies analíticas para entender cómo usan el sitio nuestros visitantes y mejorar tu experiencia.
-                <a href="https://mangupos.com/politica-de-privacidad"
-                    class="underline hover:text-white transition-colors ml-1">Política de privacidad</a>
-            </div>
-            <div class="flex gap-3 flex-shrink-0">
-                <button @click="reject()"
-                    class="px-4 py-2 text-sm font-medium text-gray-400 hover:text-white border border-gray-600 hover:border-gray-400 rounded-lg transition-colors">
-                    Rechazar
-                </button>
-                <button @click="accept()"
-                    class="px-4 py-2 text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">
-                    Aceptar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Livewire Scripts -->
-    <script src="/livewire/livewire.js?id=f084fdfb" data-csrf="FLS3CEwJr8EnwHiG2VvJE61HAoHFtsXzXaOTQh9R"
-        data-update-uri="/livewire/update" data-navigate-once="true"></script>
-
-    <!-- AOS Init -->
-    <script src="https://mangupos.com/vendor/aos/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-    </script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 </body>
 
 </html>
+
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <script>
